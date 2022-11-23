@@ -24,3 +24,23 @@ Input	Result
 2
 5
 */
+
+#include <stdio.h>
+
+int main() {
+
+  int N, a, b, maxrazl;
+  scanf("%d ", &N);
+  scanf("%d ", &a);
+  scanf("%d ", &b);
+  maxrazl= a-b;
+  
+  for(int i=0; i<(N-2); i++){
+    a=b;
+    scanf("%d", &b);
+    if ((b-a)>maxrazl)
+      maxrazl=b-a;
+  } printf("%d", maxrazl);
+  
+  return 0;
+}
