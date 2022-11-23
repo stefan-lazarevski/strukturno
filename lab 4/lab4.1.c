@@ -11,3 +11,17 @@ Input	Result
 45
 */
 
+#include <stdio.h>
+
+int main()
+{
+  
+  int i, A, B, suma=0;
+  scanf("%d %d", &A , &B);
+  for(i = A; i < B; i++){ 
+        if(i%3==0) suma +=i;
+  } printf("%d", suma);  
+  
+  return 0;
+}
+
