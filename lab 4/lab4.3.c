@@ -26,3 +26,27 @@ NEMA
 4423
 */
 
+#include <stdio.h>
+
+
+int main()
+{
+
+    int n, suma=0, tmp=0, a,b;
+    while(scanf("%d", &n)){
+        tmp = n;
+        a = tmp % 10;
+        tmp /= 10;
+        b = tmp % 10;
+        if (b > a){
+            a = tmp % 10;
+            tmp /= 10;
+            b = tmp % 10;
+        }
+    }
+    if(tmp==0) suma +=n;
+    if (suma>0) printf("%d", suma);
+    else if(suma==0) printf("NEMA");
+
+        return 0;
+}
